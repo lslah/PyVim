@@ -1,4 +1,4 @@
 PyVim
 =====
 
-python-vim-library
+A python-vim-API.
