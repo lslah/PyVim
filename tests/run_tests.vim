@@ -10,5 +10,6 @@ python sys.path.append(os.getcwd() + "/plugin")
 
 let s:test_cases = ""
 let s:test_cases .= "tests/test_pyvim.vim "
+let s:test_cases .= "tests/test_marker.vim "
 
 execute "UnitTest " . s:test_cases
