@@ -13,7 +13,8 @@ class Highlighter(object):
         pyvim.highlight(self.group, color_dict)
 
     def match_add(self, pattern):
-        pyvim.match_add(self.group, pattern)
+        match_id = pyvim.match_add(self.group, pattern)
+        return match_id
 
     def clear_matches(self):
         match_ids = self.__get_match_ids()
