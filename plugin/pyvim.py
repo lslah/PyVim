@@ -21,10 +21,8 @@ def highlight(group_name, arguments):
     vim.command(command)
 
 def __build_argument_string(arguments):
-    argument_string = ""
-    for key, value in arguments.iteritems():
-        argument_string += "%s=%s " % (key, value)
-
+    argument_list = ["%s=%s" % (key, value) for key, value in arguments.iteritems()]
+    argument_string = ' '.join(argument_list)
     return argument_string
 
 def highlight_clear(group_name):
