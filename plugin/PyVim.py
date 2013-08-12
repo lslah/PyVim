@@ -11,3 +11,4 @@ def match_add(group_name, pattern, priority=10):
     match_id = vim.eval(command)
     return int(match_id)
 
+
