@@ -6,6 +6,7 @@ function! g:python_call(command)
 endfunction
 
 python import vim
+python import os
 python sys.path.append(os.getcwd() + "/plugin")
 
 let s:test_cases = ""
